@@ -506,13 +506,13 @@ def transform(page, rec, by_file):
             info['offcard'] = True
     # ---- footer: drop Bihar, add Privacy + WhatsApp ----
     if '>Bihar</a>' in page:
-        page = re.sub(r'<a href="/#browse">Bihar</a>', '', page, count=1)
+        page = re.sub(r'<a href="(?:/#browse|index\.html#browse)">Bihar</a>', '', page, count=1)
         info['bihar_dropped'] = True
     fb = re.search(r'<div class="foot-bar">.*?</div>', page, re.S)
-    if fb and '/privacy.html' not in fb.group(0):
+    if fb and 'privacy.html' not in fb.group(0):
         new_fb = fb.group(0).replace(
             '>Contact</a>',
-            '>Contact</a> · <a href="/privacy.html">Privacy</a> · '
+            '>Contact</a> · <a href="privacy.html">Privacy</a> · '
             '<a href="https://wa.me/919905166009">WhatsApp</a>', 1)
         page = page[:fb.start()] + new_fb + page[fb.end():]
         info['footer'] = True

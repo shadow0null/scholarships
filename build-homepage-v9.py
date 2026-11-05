@@ -188,6 +188,20 @@ NEW_CSS = r"""
 .fselect{width:100%;min-height:44px;border:1px solid var(--line-d);border-radius:10px;padding:0 12px;font:inherit;background:#fff}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media(max-width:700px){.tabs,.togrow{position:sticky;top:66px;z-index:40;background:var(--bg);padding:8px 0}}
+/* ---- slider + browse columns + fraud banner (5 Nov 2026) ---- */
+.fraudbar{background:#fff8e1;border-bottom:1px solid #f0d48a;color:#5b4300;font-size:14px}
+.fraudbar-in{max-width:1220px;margin:0 auto;padding:10px 24px}
+.fraudbar strong{color:#7a5200}
+.slide .logo-big img{object-fit:contain;background:#fff;padding:10px;box-sizing:border-box}
+.bcols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:18px}
+.bcol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.bcol h3{font-size:17px;margin-bottom:8px}
+.bcol ul{list-style:none}
+.bcol li a{display:flex;gap:8px;align-items:baseline;padding:7px 0;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.bcol li:last-child a{border-bottom:0}
+.bcol li a:hover{color:var(--blue);text-decoration:underline}
+.bcol a .c{margin-left:auto;color:var(--mut);font-size:13px;flex:none}
+@media(max-width:900px){.bcols{grid-template-columns:1fr}}
 """
 
 HTML_TEMPLATE = r"""<!doctype html>
@@ -206,13 +220,15 @@ HTML_TEMPLATE = r"""<!doctype html>
 <body>
 <a class="skip" href="#matcher">Skip to matcher</a>
 <header class="hdr"><div class="hdr-in">
-<a class="brand" href="#top" aria-label="StudyDesk Scholarships home"><img src="/articles/logos/studydesk.png" alt="StudyDesk logo"><span class="bt">StudyDesk<small>Scholarships</small></span></a>
+<a class="brand" href="#top" aria-label="StudyDesk Scholarships home"><img src="articles/logos/studydesk.png" alt="StudyDesk logo"><span class="bt">StudyDesk<small>Scholarships</small></span></a>
 <nav class="main" aria-label="Primary"><a href="#matcher">Matcher</a><a href="#closing">Closing soon</a><a href="#results">Browse</a><a href="#deadlines">Deadlines</a><a href="#guides">Guides</a><a href="#how">How it works</a></nav>
 <span class="sp"></span>
 <button class="slist-btn" id="openMyPlan" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg> My plan <span class="cnt" id="myplanCount">0</span></button>
 <button class="menu-btn" id="openNav" aria-label="Open menu" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div></header>
 <aside class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu"><div class="scrim" data-close="mnav"></div><div class="panel"><div class="dhead"><h2>Menu</h2><button class="xbtn" data-close="mnav" aria-label="Close menu">×</button></div><div class="list"><a href="#matcher">Matcher</a><a href="#closing">Closing soon</a><a href="#results">Browse</a><a href="#deadlines">Deadlines</a><a href="#guides">Guides</a><a href="#how">How it works</a></div></div></aside>
+
+<div class="fraudbar" role="note"><div class="fraudbar-in"><strong>Beware of fake scholarships.</strong> StudyDesk never asks for a fee, and applications always happen on the provider's official website — never here and never through an agent.</div></div>
 
 <main class="wrap" id="top">
 <section class="matcher" id="matcher" aria-label="Scholarship matcher">
@@ -231,7 +247,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 <p class="mcounts" id="heroCounts"></p>
 </section>
 
-<section class="feat" id="featured" aria-label="Featured scholarships" hidden><div class="feat-in"><div class="sec-kick">Closing soon · Featured</div><h2 class="sec-title">Deadlines approaching fast</h2><p class="sec-sub">Open Indian government, corporate and foundation schemes closing in the next 7 days, soonest first.</p><div class="slider" id="featSlider"><div class="slides" id="featTrack"></div><div class="sctrl"><button class="sbtn" id="featPrev" aria-label="Previous featured scholarship">‹</button><button class="sbtn" id="featNext" aria-label="Next featured scholarship">›</button></div><div class="dots" id="featDots" role="tablist" aria-label="Featured slides"></div></div></div></section>
+<section class="feat" id="featured" aria-label="Featured scholarships" hidden><div class="feat-in"><div class="sec-kick">Closing soon · Featured</div><h2 class="sec-title">Deadlines approaching fast</h2><p class="sec-sub">Open scholarships closing soonest — across India, abroad and internships.</p><div class="slider" id="featSlider"><div class="slides" id="featTrack"></div><div class="sctrl"><button class="sbtn" id="featPrev" aria-label="Previous featured scholarship">‹</button><button class="sbtn" id="featNext" aria-label="Next featured scholarship">›</button></div><div class="dots" id="featDots" role="tablist" aria-label="Featured slides"></div></div></div></section>
 
 <section id="closing" aria-label="Closing in 7 days"><div class="sec-kick">Closing in 7 days</div><h2 class="sec-title">Closing soon in India</h2><p class="sec-sub">Open Indian government, corporate and foundation schemes closing in the next 7 days, soonest first.</p><div id="closingRows"></div></section>
 
@@ -255,10 +271,12 @@ HTML_TEMPLATE = r"""<!doctype html>
 
 <section class="guides" id="guides" aria-label="Student guides"><div class="guides-in"><div class="sec-kick">Student guides</div><h2 class="sec-title">In-depth guides, not just listings</h2><p class="sec-sub">Full explainers with eligibility, documents, award conditions and official sources — written from verified notifications.</p><div class="grid" id="guideGrid"></div></div></section>
 
+<section class="browsecols" id="browseCols" aria-label="Browse scholarships by category"><div class="sec-kick">Browse</div><h2 class="sec-title">Browse scholarships by state, level and type</h2><p class="sec-sub">Counts show open scholarships only, recomputed daily from each listing's own deadline.</p><div class="bcols" id="browseColsGrid"></div></section>
+
 <section class="how wrap" id="how"><div class="sec-kick">How it works</div><h2 class="sec-title">How a listing gets on this page</h2><div class="steps"><div class="step"><div class="sn">1</div><h3>Checked against the source</h3><p>Each listing is checked against the provider's own notification, portal or press release before publication. The verification date shown on every page is that listing's own date — never a site-wide claim.</p></div><div class="step"><div class="sn">2</div><h3>Official or mentioned by</h3><p>A link is called “Official source” only when it goes to the provider or a government portal. Aggregator pages (Buddy4Study, Bright Scholarship, Opportunity Desk and others) are labelled “Mentioned by”, never “Official source”.</p></div><div class="step"><div class="sn">3</div><h3>Apply on the official site</h3><p>Applications always happen on the provider's website — never here. Deadlines are recomputed every day from the listing's own date, so a closed scheme never shows as open.</p></div></div><div class="trust"><div class="tbox"><h3>Not a government website</h3><p>StudyDesk is an independent education guide — not a government website and not affiliated with any provider listed here. Always confirm details on the official portal before applying.</p></div></div></section>
 </main>
 
-<footer><div class="foot-in"><div><div class="foot-brand"><img src="/articles/logos/studydesk.png" alt="StudyDesk logo"><span class="bt">StudyDesk<small>Scholarships</small></span></div><p id="footCounts"></p></div><div><h4>Explore</h4><div class="fl"><a href="#results">All scholarships</a><a href="#closing">Closing soon</a><a href="#deadlines">Deadlines</a><a href="#guides">Guides</a></div></div><div><h4>StudyDesk</h4><div class="fl"><a href="https://studydesk.fun/about/">About</a><a href="https://studydesk.fun/">News</a><a href="https://studydesk.fun/seva/">Seva</a></div></div><div><h4>Contact</h4><div class="fl"><a href="https://wa.me/919905166009">WhatsApp: +91 99051 66009</a><a href="mailto:scholarships@studydesk.fun">scholarships@studydesk.fun</a></div></div></div><p class="naff-line">StudyDesk is an independent education guide — not a government website and not affiliated with any provider listed here.</p><div class="copy"><span>© 2026 StudyDesk</span><span>Shortlists are stored only in your browser. <a href="/privacy.html">Privacy</a></span></div></footer>
+<footer><div class="foot-in"><div><div class="foot-brand"><img src="articles/logos/studydesk.png" alt="StudyDesk logo"><span class="bt">StudyDesk<small>Scholarships</small></span></div><p id="footCounts"></p></div><div><h4>Explore</h4><div class="fl"><a href="#results">All scholarships</a><a href="#closing">Closing soon</a><a href="#deadlines">Deadlines</a><a href="#guides">Guides</a></div></div><div><h4>StudyDesk</h4><div class="fl"><a href="https://studydesk.fun/about/">About</a><a href="https://studydesk.fun/">News</a><a href="https://studydesk.fun/seva/">Seva</a></div></div><div><h4>Contact</h4><div class="fl"><a href="https://wa.me/919905166009">WhatsApp: +91 99051 66009</a><a href="mailto:scholarships@studydesk.fun">scholarships@studydesk.fun</a></div></div></div><p class="naff-line">StudyDesk is an independent education guide — not a government website and not affiliated with any provider listed here.</p><div class="copy"><span>© 2026 StudyDesk</span><span>Shortlists are stored only in your browser. <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="sitemap.xml">Sitemap</a></span></div></footer>
 
 <aside class="fdrawer" id="fdrawer" role="dialog" aria-modal="true" aria-label="Filters"><div class="scrim" data-close="fdrawer"></div><div class="panel"><div class="dhead"><h2>Filters</h2><button class="xbtn" data-close="fdrawer" aria-label="Close filters">×</button></div><div id="filterPanelMobile"></div><div class="mrow" style="padding:0 18px 18px"><button class="btn btn-navy" id="mApply" type="button">Show results</button><button class="btn btn-line" id="mReset" type="button">Reset</button></div></div></aside>
 
@@ -345,13 +363,14 @@ function soonestCmp(a,b){
   return da-db;
 }
 /* ---- state ---- */
-var DEF = {tab:'india',edu:[],states:[],support:[],need:'',q:'',sort:'soonest',showClosed:false,minAward:''};
+var DEF = {tab:'india',edu:[],states:[],support:[],need:'',q:'',sort:'soonest',showClosed:false,minAward:'',ptype:''};
 var S = JSON.parse(JSON.stringify(DEF));
 var visible = 24;
 var byId = {}; DATA.forEach(function(r){ byId[r.id]=r; });
 var STATE_LIST = (function(){ var c={}; DATA.forEach(function(r){ (r.states||[]).forEach(function(s){ if(s!=='National') c[s]=(c[s]||0)+1; }); }); return Object.keys(c).sort(function(a,b){ return (c[b]-c[a]) || (a<b?-1:1); }); })();
 var EDU_L = {class910:'Classes 9–10',class1112:'Classes 11–12',diploma:'Diploma',iti:'ITI',ug:'Undergraduate',pg:'Postgraduate',phd:'PhD / Doctoral'};
 var SUP_L = {girls:'Girls',reserved:'SC/ST/OBC (Reserved)',income:'Income-based',disability:'Disability',minority:'Minority',merit:'Merit-based',sports:'Sports'};
+var PTYPE_L = {government:'Government',corporate:'Corporate',foundation:'Foundation',international:'International',other:'Other'};
 function eduCount(tag){ var n=0; DATA.forEach(function(r){ if(tabOf(r)!==S.tab) return; if((r.edu||[]).indexOf(tag)>=0) n++; }); return n; }
 function supCount(tag){ var n=0; DATA.forEach(function(r){ if(tabOf(r)!==S.tab) return; if((r.support||[]).indexOf(tag)>=0) n++; }); return n; }
 function shortlist(){ try{ var v=JSON.parse(localStorage.getItem('sd_shortlist')||'[]'); return Array.isArray(v)?v.filter(function(id){ return !!byId[id]; }):[]; }catch(e){ return []; } }
@@ -396,6 +415,7 @@ function passFilters(r, skipStates){
   if(S.edu.length && !S.edu.some(function(t){ return (r.edu||[]).indexOf(t)>=0; })) return false;
   if(!skipStates && S.states.length && !(r.states||[]).some(function(s){ return S.states.indexOf(s)>=0; })) return false;
   if(S.support.length && !S.support.some(function(t){ return (r.support||[]).indexOf(t)>=0; })) return false;
+  if(S.ptype && r.ptype!==S.ptype) return false;
   if(!needPass(r)) return false;
   if(S.minAward!=='' && !isNaN(parseFloat(S.minAward))){ var am=runtimeAwardMax(r); if(am===null || am<parseFloat(S.minAward)) return false; }
   var q=(S.q||'').toLowerCase().trim(); var words=q?q.split(/\s+/):[];
@@ -413,7 +433,7 @@ var TINY_LOGOS={"logos/fav-andaman.png":1,"logos/fav-apu.png":1,"logos/fav-auc.p
 function cardHTML(r){
   var st=pillFor(r), saved=isSaved(r.id);
   var initial=esc((r.provider||'S').trim().charAt(0).toUpperCase());
-  var logo=(r.logo&&!TINY_LOGOS[r.logo])?'<img src="/articles/'+esc(r.logo)+'" alt="" loading="lazy" onerror="this.remove()">':'';
+  var logo=(r.logo&&!TINY_LOGOS[r.logo])?'<img src="articles/'+esc(r.logo)+'" alt="" loading="lazy" onerror="this.remove()">':'';
   var host=hostOf(r.srcUrl||'');
   var trust=host?esc(host)+' · Checked '+esc(r.verified):'Checked '+esc(r.verified);
   return '<article class="card"><span class="pill st-'+st.key+'">'+esc(st.label)+'</span>'
@@ -445,6 +465,7 @@ function renderChips(){
   S.states.forEach(function(s){ h+=chipHTML('states',s,s); });
   S.support.forEach(function(t){ h+=chipHTML('support',t,SUP_L[t]); });
   if(S.need) h+=chipHTML('need',S.need,{fees:'Fees',stipend:'Stipend',coaching:'Coaching'}[S.need]);
+  if(S.ptype) h+=chipHTML('ptype',S.ptype,PTYPE_L[S.ptype]||S.ptype);
   if(S.q) h+='<span class="chip">Search: “'+esc(S.q)+'”<button type="button" data-unchip="q:" aria-label="Clear search">×</button></span>';
   if(S.minAward!=='') h+=chipHTML('minAward',S.minAward,'Min. Rs '+esc(S.minAward));
   if(h) h+='<span class="chip clear">Reset all<button type="button" data-unchip="all:" aria-label="Reset all filters">×</button></span>';
@@ -514,14 +535,31 @@ function renderClosing(){
 var featIdx=0, featSlides=[];
 function renderFeatured(){
   var sec=document.getElementById('featured'); if(!sec) return;
-  featSlides=indiaClosing7().slice(0,4); featIdx=0;
+  featSlides=DATA.filter(function(r){ return openDated(r); }).sort(soonestCmp).slice(0,5); featIdx=0;
   if(!featSlides.length){ sec.hidden=true; return; }
   sec.hidden=false;
   var track=document.getElementById('featTrack'); if(!track) return;
-  track.innerHTML=featSlides.map(function(r,i){ var st=statusFor(r.dl); return '<div class="slide"'+(i===0?' role="tabpanel"':' hidden')+' aria-label="'+esc(cleanTitle(r.title))+'"><span class="pill st-'+st.key+'">'+esc(st.label)+'</span><h3><a href="'+esc(r.file)+'">'+esc(cleanTitle(r.title))+'</a></h3><p class="prov">'+esc(r.provider)+'</p><p class="saward">'+esc(awardShort(r))+'</p><p class="trust">Checked '+esc(r.verified)+'</p><div class="cta-row"><a class="btn btn-navy" href="'+esc(r.file)+'">View details</a></div></div>'; }).join('');
+  track.innerHTML=featSlides.map(function(r,i){ var st=statusFor(r.dl); var initial=esc((r.provider||'S').trim().charAt(0).toUpperCase()); var logo=(r.logo&&!TINY_LOGOS[r.logo])?'<img src="articles/'+esc(r.logo)+'" alt="" loading="lazy" onerror="this.remove()">':''; return '<div class="slide"'+(i===0?' role="tabpanel"':' hidden')+' aria-label="'+esc(cleanTitle(r.title))+'"><div class="slide-main"><span class="pill st-'+st.key+'">'+esc(st.label)+'</span><h3><a href="'+esc(r.file)+'">'+esc(cleanTitle(r.title))+'</a></h3><p class="prov">'+esc(r.provider)+'</p><p class="saward">'+esc(awardShort(r))+'</p><p class="trust">Checked '+esc(r.verified)+'</p><div class="cta-row"><a class="btn btn-navy" href="'+esc(r.file)+'">View details</a></div></div><span class="logo-big">'+initial+logo+'</span></div>'; }).join('');
   var dots=document.getElementById('featDots'); if(dots) dots.innerHTML=featSlides.map(function(r,i){ return '<button type="button" role="tab" aria-selected="'+(i===0?'true':'false')+'" aria-label="Go to slide '+(i+1)+'" data-slide="'+i+'"></button>'; }).join('');
+  featStart();
 }
-function featGo(i){ if(!featSlides.length) return; featIdx=(i+featSlides.length)%featSlides.length; var track=document.getElementById('featTrack'); if(!track) return; Array.prototype.forEach.call(track.children,function(el,j){ if(j===featIdx){ el.hidden=false; el.setAttribute('role','tabpanel'); } else { el.hidden=true; el.removeAttribute('role'); } }); var dots=document.getElementById('featDots'); if(dots) Array.prototype.forEach.call(dots.children,function(b,j){ b.setAttribute('aria-selected', j===featIdx?'true':'false'); }); }
+function featGo(i){ if(!featSlides.length) return; featIdx=(i+featSlides.length)%featSlides.length; var track=document.getElementById('featTrack'); if(!track) return; Array.prototype.forEach.call(track.children,function(el,j){ if(j===featIdx){ el.hidden=false; el.setAttribute('role','tabpanel'); } else { el.hidden=true; el.removeAttribute('role'); } }); var dots=document.getElementById('featDots'); if(dots) Array.prototype.forEach.call(dots.children,function(b,j){ b.setAttribute('aria-selected', j===featIdx?'true':'false'); }); featStart(); }
+var featTimer=null;
+function featStart(){ if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; featStop(); featTimer=setInterval(function(){ featGo(featIdx+1); },5000); }
+function featStop(){ if(featTimer){ clearInterval(featTimer); featTimer=null; } }
+function openCountWhere(tab,pred){ var n=0; DATA.forEach(function(r){ if(isGuide(r)) return; if(tabOf(r)!==tab) return; if(!isOpenR(r)) return; if(pred(r)) n++; }); return n; }
+function bestTab(pred){ var tabs=['india','abroad','internships'], best='india', bn=-1; tabs.forEach(function(t){ var n=openCountWhere(t,pred); if(n>bn){ bn=n; best=t; } }); return {tab:best,count:bn}; }
+function renderBrowseCols(){
+  var grid=document.getElementById('browseColsGrid'); if(!grid) return;
+  function item(label,tab,count,browse){ return {label:label,tab:tab,count:count,browse:browse}; }
+  var states=STATE_LIST.map(function(s){ return item(s,'india',openCountWhere('india',function(r){ return (r.states||[]).indexOf(s)>=0; }),'state:'+s); }).filter(function(x){ return x.count>0; }).sort(function(a,b){ return b.count-a.count; }).slice(0,12);
+  var edu=Object.keys(EDU_L).map(function(tag){ var b=bestTab(function(r){ return (r.edu||[]).indexOf(tag)>=0; }); return item(EDU_L[tag],b.tab,b.count,'edu:'+tag); }).filter(function(x){ return x.count>0; });
+  var types=[['government','Government','india'],['corporate','Corporate','india'],['foundation','Foundation','india'],['international','International','abroad']].map(function(t){ return item(t[1],t[2],openCountWhere(t[2],function(r){ return r.ptype===t[0]; }),'ptype:'+t[0]); }).filter(function(x){ return x.count>0; });
+  var ob=bestTab(function(r){ return r.ptype==='other'; }); if(ob.count>0) types.push(item('Other',ob.tab,ob.count,'ptype:other'));
+  var ic=openCountWhere('internships',function(r){ return true; }); if(ic>0) types.push(item('Internships','internships',ic,'tab:internships'));
+  function col(title,items){ var h='<div class="bcol"><h3>'+esc(title)+'</h3><ul>'; items.forEach(function(it){ h+='<li><a href="#results" data-browse="'+esc(it.browse)+'" data-tab="'+esc(it.tab)+'">'+esc(it.label)+' <span class="c">'+it.count+'</span></a></li>'; }); return h+'</ul></div>'; }
+  grid.innerHTML=col('By state',states)+col('By level',edu)+col('By type',types);
+}
 function renderBoard(){
   var el=document.getElementById('boardRows'); if(!el) return;
   var rows=DATA.filter(function(r){ return openDated(r) && tabOf(r)===S.tab; }).sort(soonestCmp).slice(0,12);
@@ -530,7 +568,7 @@ function renderBoard(){
 function renderGuides(){
   var el=document.getElementById('guideGrid'); if(!el) return;
   var files=@@GUIDEFILES@@;
-  el.innerHTML=files.map(function(f){ var r=byId[Object.keys(byId).filter(function(id){ return byId[id].file===f; })[0]]; if(!r) return ''; var initial=esc((r.provider||'S').trim().charAt(0).toUpperCase()); var logo=(r.logo&&!TINY_LOGOS[r.logo])?'<img src="/articles/'+esc(r.logo)+'" alt="" loading="lazy" onerror="this.remove()">':''; var blurb=awardShort(r)!=='Amount not stated'?awardShort(r):whoLine(r); return '<article class="gcard"><div class="gcover">'+logo+'<span class="gt">'+initial+'</span></div><div class="gbody"><span class="gk">Guide · '+esc(r.provider)+'</span><h3><a href="'+esc(r.file)+'">'+esc(cleanTitle(r.title))+'</a></h3><p>'+esc(wordCut(blurb,140))+'</p><span class="gm">Checked '+esc(r.verified)+'</span><a class="gr" href="'+esc(r.file)+'">Read the full guide →</a></div></article>'; }).join('');
+  el.innerHTML=files.map(function(f){ var r=byId[Object.keys(byId).filter(function(id){ return byId[id].file===f; })[0]]; if(!r) return ''; var initial=esc((r.provider||'S').trim().charAt(0).toUpperCase()); var logo=(r.logo&&!TINY_LOGOS[r.logo])?'<img src="articles/'+esc(r.logo)+'" alt="" loading="lazy" onerror="this.remove()">':''; var blurb=awardShort(r)!=='Amount not stated'?awardShort(r):whoLine(r); return '<article class="gcard"><div class="gcover">'+logo+'<span class="gt">'+initial+'</span></div><div class="gbody"><span class="gk">Guide · '+esc(r.provider)+'</span><h3><a href="'+esc(r.file)+'">'+esc(cleanTitle(r.title))+'</a></h3><p>'+esc(wordCut(blurb,140))+'</p><span class="gm">Checked '+esc(r.verified)+'</span><a class="gr" href="'+esc(r.file)+'">Read the full guide →</a></div></article>'; }).join('');
 }
 function myplanRecords(){ return shortlist().map(function(id){ return byId[id]; }).filter(Boolean).sort(soonestCmp); }
 var compareSel=[];
@@ -604,7 +642,7 @@ function init(){
     var raw=sessionStorage.getItem('sd_state');
     if(raw){ var saved=JSON.parse(raw); var trial=JSON.parse(JSON.stringify(DEF)); Object.keys(DEF).forEach(function(k){ if(saved[k]!==undefined) trial[k]=saved[k]; }); var keep=S; S=trial; var n=filtered().length; if(n===0){ S=keep; try{ sessionStorage.removeItem('sd_state'); }catch(e){} } }
   }catch(e){}
-  syncFilterUI(); render(); renderClosing(); renderFeatured(); renderBoard(); renderGuides();
+  syncFilterUI(); render(); renderClosing(); renderFeatured(); renderBoard(); renderGuides(); renderBrowseCols();
   document.addEventListener('change',function(e){
     var t=e.target;
     if(t.matches && t.matches('[data-fgroup]')){ var g=t.dataset.fgroup, arr=S[g]; if(t.checked){ if(arr.indexOf(t.value)<0) arr.push(t.value); } else { var i=arr.indexOf(t.value); if(i>=0) arr.splice(i,1); } visible=24; syncFilterUI(); render(); }
@@ -620,11 +658,13 @@ function init(){
   });
   document.addEventListener('click',function(e){
     var u=e.target.closest?e.target.closest('[data-unchip]'):null;
-    if(u){ var parts=u.dataset.unchip.split(':'), g=parts[0], v=parts.slice(1).join(':'); if(g==='all'){ resetAll(); return; } if(g==='q'){ S.q=''; var q=el('q'); if(q) q.value=''; } else if(g==='minAward'){ S.minAward=''; } else { var i=S[g].indexOf(v); if(i>=0) S[g].splice(i,1); } visible=24; syncFilterUI(); render(); return; }
+    if(u){ var parts=u.dataset.unchip.split(':'), g=parts[0], v=parts.slice(1).join(':'); if(g==='all'){ resetAll(); return; } if(g==='q'){ S.q=''; var q=el('q'); if(q) q.value=''; } else if(g==='minAward'){ S.minAward=''; } else if(g==='ptype'){ S.ptype=''; } else { var i=S[g].indexOf(v); if(i>=0) S[g].splice(i,1); } visible=24; syncFilterUI(); render(); return; }
     var sv=e.target.closest?e.target.closest('[data-save]'):null;
     if(sv){ var id=sv.dataset.save; var ids=shortlist(); var k=ids.indexOf(id); if(k>=0) ids.splice(k,1); else ids.push(id); setShortlist(ids); sv.textContent = k>=0?'Save':'Saved ✓'; sv.setAttribute('aria-pressed', k>=0?'false':'true'); renderMyPlan(); toast(k>=0?'Removed from My plan.':'Saved to My plan.'); return; }
     var un=e.target.closest?e.target.closest('[data-unsave]'):null;
     if(un){ var ids2=shortlist(); var k2=ids2.indexOf(un.dataset.unsave); if(k2>=0) ids2.splice(k2,1); setShortlist(ids2); renderMyPlan(); render(); return; }
+    var br=e.target.closest?e.target.closest('[data-browse]'):null;
+    if(br){ var parts=br.dataset.browse.split(':'), k=parts[0], v=parts.slice(1).join(':'); resetAll(); if(k==='state'){ S.tab='india'; S.states=[v]; } else if(k==='edu'){ S.tab=br.dataset.tab||'india'; S.edu=[v]; } else if(k==='ptype'){ S.tab=br.dataset.tab||'india'; S.ptype=v; } else if(k==='tab'){ S.tab=v; } visible=24; var fp=el('filterPanel'); if(fp) fp.innerHTML=filterPanelHTML(); var fpm=el('filterPanelMobile'); if(fpm) fpm.innerHTML=filterPanelHTML(); syncFilterUI(); render(); var rr=el('results'); if(rr) rr.scrollIntoView(); return; }
     var tb=e.target.closest?e.target.closest('[data-tab]'):null;
     if(tb){ S.tab=tb.dataset.tab; S.states=[]; visible=24; var fp=el('filterPanel'); if(fp) fp.innerHTML=filterPanelHTML(); var fpm=el('filterPanelMobile'); if(fpm) fpm.innerHTML=filterPanelHTML(); syncFilterUI(); render(); return; }
     var ics=e.target.closest?e.target.closest('[data-ics]'):null;
@@ -650,6 +690,7 @@ function init(){
   bind('clearCompare','click',function(){ compareSel=[]; document.querySelectorAll('[data-cmpchk]').forEach(function(c){ c.checked=false; }); renderMyPlan(); });
   bind('featPrev','click',function(){ featGo(featIdx-1); });
   bind('featNext','click',function(){ featGo(featIdx+1); });
+  var fs=document.getElementById('featSlider'); if(fs){ fs.addEventListener('mouseenter',featStop); fs.addEventListener('mouseleave',featStart); fs.addEventListener('focusin',featStop); fs.addEventListener('focusout',featStart); }
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ ['mnav','fdrawer','myplanDrawer','cmpModal'].forEach(function(id){ closeOverlay(id); }); } });
 }
 init();
