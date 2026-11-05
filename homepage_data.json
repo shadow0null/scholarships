@@ -1,0 +1,873 @@
+[
+ {
+  "file": "sml-mahindra-scholarship-saarthi-2026-27.html",
+  "title": "SML Mahindra Scholarship Program 2026–27 (Saarthi Abhiyaan)",
+  "provider": "SML Mahindra",
+  "ptype": "CSR",
+  "cats": [
+   "CSR",
+   "Girls"
+  ],
+  "sub": "Rs 10,000 for Class 11–12 girls and Rs 30,000 for UG/diploma STEM students — for daughters of commercial vehicle drivers.",
+  "award": "Rs 10,000 – 30,000",
+  "who": "Daughters of commercial vehicle drivers",
+  "dl_raw": "21 Oct 2026",
+  "dl": "2026-10-21",
+  "days": 5,
+  "logo": "logos/mahindra.png"
+ },
+ {
+  "file": "pathani-samanta-maths-talent-scholarship-2026-27.html",
+  "title": "Pathani Samanta Mathematics Talent Scholarship 2026–27",
+  "provider": "Govt. of Odisha",
+  "ptype": "Odisha Government",
+  "cats": [
+   "Odisha Government",
+   "Merit"
+  ],
+  "sub": "Rs 5,000 a year for 1,000 meritorious Class 11–12 students with talent in Mathematics — Odisha’s own maths scholarship.",
+  "award": "Rs 5,000 / year",
+  "who": "Class 11–12 students",
+  "dl_raw": "25 Oct 2026",
+  "dl": "2026-10-25",
+  "days": 9,
+  "logo": "logos/odisha.png"
+ },
+ {
+  "file": "vidyadhan-mathura-women-stem-scholarship-2026.html",
+  "title": "Vidyadhan Mathura Scholarship for Women in STEM 2026",
+  "provider": "Vidyadhan",
+  "ptype": "Private",
+  "cats": [
+   "Private",
+   "Girls",
+   "STEM"
+  ],
+  "sub": "Rs 15,000 to Rs 75,000 a year — plus mentoring — for girl students from Mathura district pursuing STEM degrees.",
+  "award": "Rs 15,000–75,000 / year",
+  "who": "Girls from Mathura district",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 5,
+  "logo": "logos/fav-vidyadhan.png"
+ },
+ {
+  "file": "bloomberg-harvard-visiting-scholars-2027.html",
+  "title": "Bloomberg Harvard Visiting Scholars Program 2027",
+  "provider": "Harvard University",
+  "ptype": "Harvard",
+  "cats": [
+   "Harvard",
+   "Research Fellowship"
+  ],
+  "sub": "A funded semester or year at Harvard — for researchers working on how cities solve problems.",
+  "award": "Residency + housing",
+  "who": "Doctoral researchers",
+  "dl_raw": "28 Oct 2026 (closed)",
+  "dl": "2026-10-28",
+  "days": -1,
+  "logo": "logos/fav-harvard.png"
+ },
+ {
+  "file": "nasa-hubble-fellowship-program-2027.html",
+  "title": "NASA Hubble Fellowship Program 2027",
+  "provider": "NASA",
+  "ptype": "NASA",
+  "cats": [
+   "NASA",
+   "Postdoctoral Fellowship"
+  ],
+  "sub": "Salary, benefits and research funding for up to three years — for postdoctoral scientists in NASA Astrophysics.",
+  "award": "Salary + benefits",
+  "who": "Recent postdocs",
+  "dl_raw": "28 Oct 2026 (closed)",
+  "dl": "2026-10-28",
+  "days": -1,
+  "logo": "logos/fav-nasa.png"
+ },
+ {
+  "file": "aditya-birla-capital-scholarship-2026-27.html",
+  "title": "Aditya Birla Capital Scholarship Program 2026–27",
+  "provider": "Aditya Birla Capital Foundation",
+  "ptype": "CSR",
+  "cats": [
+   "CSR",
+   "Girls"
+  ],
+  "sub": "Rs 25,000 to Rs 60,000 one-time support for meritorious girl students — from Class 9 to post-graduation.",
+  "award": "Rs 25,000 – 60,000",
+  "who": "Girl students",
+  "dl_raw": "30 Oct 2026 (closed)",
+  "dl": "2026-10-30",
+  "days": -1,
+  "logo": "logos/fav-abc.png"
+ },
+ {
+  "file": "concentrix-scholarship-2026-27.html",
+  "title": "Concentrix Scholarship Program 2026–27",
+  "provider": "Concentrix",
+  "ptype": "CSR",
+  "cats": [
+   "CSR",
+   "Girls",
+   "Medical"
+  ],
+  "sub": "Up to Rs 65,000 a year, for the full MBBS course — for female first-year students at government medical colleges.",
+  "award": "Up to Rs 65,000 / year",
+  "who": "Female 1st-year MBBS students",
+  "dl_raw": "15 Nov 2026",
+  "dl": "2026-11-15",
+  "days": 15,
+  "logo": "logos/fav-concentrix.png"
+ },
+ {
+  "file": "infocepts-innovate-impact-scholarship-2026-27.html",
+  "title": "Infocepts Innovate for Impact Scholarship 2026–27",
+  "provider": "Infocepts Foundation",
+  "ptype": "CSR",
+  "cats": [
+   "CSR",
+   "Engineering"
+  ],
+  "sub": "Up to Rs 50,000 a year for up to four years — for UG students in Computer Engineering, IT, AI, ML and Data Science.",
+  "award": "Up to Rs 50,000 / year",
+  "who": "UG CS / IT / AI / ML / Data Science",
+  "dl_raw": "30 Oct 2026 (closed)",
+  "dl": "2026-10-30",
+  "days": -1,
+  "logo": "logos/fav-infocepts.png"
+ },
+ {
+  "file": "muskaan-scholarship-2-2026-27.html",
+  "title": "Muskaan Scholarship Program 2.0 (2026–27)",
+  "provider": "Valvoline Cummins",
+  "ptype": "CSR",
+  "cats": [
+   "CSR",
+   "School Students"
+  ],
+  "sub": "Up to Rs 12,000 plus mentoring — for Class 9–12 students who are children of commercial drivers, mechanics, or from EWS families.",
+  "award": "Up to Rs 12,000",
+  "who": "Class 9–12 students",
+  "dl_raw": "30 Oct 2026 (closed)",
+  "dl": "2026-10-30",
+  "days": -1,
+  "logo": "logos/muskaan.png"
+ },
+ {
+  "file": "nsp-post-matric-sc-meghalaya-2026-27.html",
+  "title": "NSP Post-Matric Scholarship for SC Students, Meghalaya 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "SC"
+  ],
+  "sub": "Annual academic allowance up to Rs 13,500 plus monthly maintenance — for SC students of Meghalaya from Class 11 to PhD.",
+  "award": "Up to Rs 13,500 / year",
+  "who": "SC students",
+  "dl_raw": "30 Oct 2026 (closed)",
+  "dl": "2026-10-30",
+  "days": -1,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "nsp-pre-matric-st-manipur-2026-27.html",
+  "title": "Pre-Matric Scholarship for ST Students (Class 9 &amp; 10), Manipur 2026–27",
+  "provider": "Ministry of Tribal Affairs",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "ST"
+  ],
+  "sub": "Up to Rs 350 a month for 10 months plus a books grant — keeping ST students in school through Classes 9 and 10.",
+  "award": "Up to Rs 350 / month × 10",
+  "who": "ST students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 0,
+  "logo": "logos/fav-mota.png"
+ },
+ {
+  "file": "ujjivan-transgender-scholarship-2026-27.html",
+  "title": "Ujjivan Small Finance Bank Transgender Scholarship Program 2026–27",
+  "provider": "Ujjivan SFB",
+  "ptype": "CSR",
+  "cats": [
+   "CSR",
+   "Transgender Students"
+  ],
+  "sub": "A one-time scholarship of up to Rs 40,000 for transgender students across India — Classes 9–12, UG and PG.",
+  "award": "Up to Rs 40,000",
+  "who": "Transgender students, pan-India",
+  "dl_raw": "15 Nov 2026",
+  "dl": "2026-11-15",
+  "days": 15,
+  "logo": "logos/ujjivan.png"
+ },
+ {
+  "file": "ambedkar-medhavi-chatravriti-himachal-2026-27.html",
+  "title": "Dr. Ambedkar Medhavi Chatravriti Yojana, Himachal Pradesh 2026–27",
+  "provider": "Govt. of Himachal Pradesh",
+  "ptype": "Himachal Pradesh",
+  "cats": [
+   "Himachal Pradesh",
+   "SC/OBC"
+  ],
+  "sub": "Rs 12,000 a year for top SC students and Rs 10,000 a year for top OBC students in the HPBOSE matric merit list — for two years.",
+  "award": "Rs 10,000–12,000 / year",
+  "who": "SC/OBC HP domicile",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-hp.png"
+ },
+ {
+  "file": "icar-junior-research-fellowship-pgs-2026.html",
+  "title": "ICAR Junior Research Fellowship for Postgraduate Studies 2026",
+  "provider": "ICAR",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "ICAR",
+   "Fellowship"
+  ],
+  "sub": "Rs 8,640 to Rs 12,000 a month plus contingency — ICAR’s fellowship for Master’s students in agricultural sciences.",
+  "award": "Rs 8,640 – 12,000 / month",
+  "who": "Agriculture graduates",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/icar.png"
+ },
+ {
+  "file": "icar-nts-pg-scholarship-2026.html",
+  "title": "ICAR National Talent Scholarship (Postgraduate) 2026",
+  "provider": "ICAR",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "ICAR"
+  ],
+  "sub": "Rs 5,000 a month for Master’s agriculture students who joined a university outside their home state.",
+  "award": "Rs 5,000 / month",
+  "who": "PG agriculture students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/icar.png"
+ },
+ {
+  "file": "icar-nts-ug-scholarship-2026.html",
+  "title": "ICAR National Talent Scholarship (Undergraduate) 2026",
+  "provider": "ICAR",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "ICAR"
+  ],
+  "sub": "Rs 3,000 a month for UG agriculture students admitted through the All India entrance — studying outside their home state.",
+  "award": "Rs 3,000 / month",
+  "who": "UG agriculture students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/icar.png"
+ },
+ {
+  "file": "isi-kolkata-stipend-scheme-ug-pg-2026-27.html",
+  "title": "Stipend Scheme for Undergraduate and Postgraduate Studies, ISI Kolkata 2026–27",
+  "provider": "ISI Kolkata",
+  "ptype": "Institute",
+  "cats": [
+   "Institute",
+   "Merit"
+  ],
+  "sub": "Rs 5,000 to Rs 12,400 a month plus contingency — every ISI student gets a stipend, not just a few.",
+  "award": "Rs 5,000 – 12,400 / month",
+  "who": "ISI students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/isi.png"
+ },
+ {
+  "file": "nirman-shramik-kalyan-yojana-odisha-2026-27.html",
+  "title": "Nirman Shramik Kalyan Yojana Scholarship 2026–27",
+  "provider": "Govt. of Odisha",
+  "ptype": "Odisha Government",
+  "cats": [
+   "Odisha Government",
+   "Workers’ Children"
+  ],
+  "sub": "Rs 2,000 to Rs 40,000 a year — educational assistance for children of registered building and construction workers in Odisha.",
+  "award": "Rs 2,000 – 40,000 / year",
+  "who": "Children of construction workers",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/odisha.png"
+ },
+ {
+  "file": "nsp-post-matric-sc-sikkim-2026-27.html",
+  "title": "NSP Post-Matric Scholarship for SC Students, Sikkim 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "SC"
+  ],
+  "sub": "Annual academic allowance up to Rs 13,500 plus monthly maintenance — for SC students of Sikkim.",
+  "award": "Up to Rs 13,500 / year",
+  "who": "SC students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "nsp-pre-matric-sc-sikkim-2026-27.html",
+  "title": "Pre-Matric Scholarship for SC Students (Class 9 &amp; 10), Sikkim 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "SC"
+  ],
+  "sub": "Rs 3,500 a year for day scholars, Rs 7,000 for hostellers — keeping SC students in school through Classes 9 and 10.",
+  "award": "Rs 3,500 – 7,000 / year",
+  "who": "SC students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "nsp-pre-matric-st-goa-2026-27.html",
+  "title": "Pre-Matric Scholarship for ST Students (Class 9 &amp; 10), Goa 2026–27",
+  "provider": "Ministry of Tribal Affairs",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "ST"
+  ],
+  "sub": "Up to Rs 5,250 a year plus a books grant — for ST students of Goa in Classes 9 and 10.",
+  "award": "Up to Rs 5,250 / year",
+  "who": "ST students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-mota.png"
+ },
+ {
+  "file": "nsp-top-class-education-sc-2026-27.html",
+  "title": "Central Sector Scholarship of Top Class Education for SC Students 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "SC"
+  ],
+  "sub": "Full tuition plus Rs 86,000 in the first year — for SC students in India’s top institutions.",
+  "award": "Full tuition + Rs 86,000",
+  "who": "SC students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "oasis-post-matric-obc-west-bengal-2026-27.html",
+  "title": "Oasis Post-Matric Scholarship for OBC Students, West Bengal 2026–27",
+  "provider": "Govt. of West Bengal",
+  "ptype": "West Bengal",
+  "cats": [
+   "West Bengal",
+   "OBC"
+  ],
+  "sub": "Up to Rs 20,000 a year for hostellers — West Bengal’s Oasis track for OBC post-matric students.",
+  "award": "Up to Rs 20,000 / year",
+  "who": "OBC students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-wb.png"
+ },
+ {
+  "file": "oasis-post-matric-sc-st-west-bengal-2026-27.html",
+  "title": "Oasis Post-Matric Scholarship for SC/ST Students, West Bengal 2026–27",
+  "provider": "Govt. of West Bengal",
+  "ptype": "West Bengal",
+  "cats": [
+   "West Bengal",
+   "SC/ST"
+  ],
+  "sub": "Up to Rs 13,500 a year plus monthly maintenance — West Bengal’s own portal for SC/ST post-matric students.",
+  "award": "Up to Rs 13,500 / year",
+  "who": "SC/ST students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-wb.png"
+ },
+ {
+  "file": "pm-scholarship-scheme-ministry-railways-2026-27.html",
+  "title": "Prime Minister's Scholarship Scheme for Ministry of Railways 2026–27",
+  "provider": "Ministry of Railways",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "RPF/RPSF Wards"
+  ],
+  "sub": "Rs 3,000 a month for girls and Rs 2,500 for boys — for the wards and widows of RPF/RPSF personnel.",
+  "award": "Rs 2,500 – 3,000 / month",
+  "who": "RPF/RPSF wards & widows",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/railways.png"
+ },
+ {
+  "file": "pm-yasasvi-post-matric-obc-andaman-2026-27.html",
+  "title": "PM Yasasvi Post-Matric Scholarship for OBC Students, Andaman &amp; Nicobar Islands 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "OBC"
+  ],
+  "sub": "Up to Rs 10,000 a year — for OBC students of the Andaman & Nicobar Islands in post-matric courses.",
+  "award": "Up to Rs 10,000 / year",
+  "who": "OBC students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "pm-yasasvi-post-matric-obc-sikkim-2026-27.html",
+  "title": "PM Yasasvi Post-Matric Scholarship for OBC, EBC and DNT Students, Sikkim 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "OBC/EBC/DNT"
+  ],
+  "sub": "Academic allowance plus tuition fees up to Rs 20,000 a year — for OBC, EBC and DNT students of Sikkim.",
+  "award": "Up to Rs 20,000 / year",
+  "who": "OBC/EBC/DNT students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "pm-yasasvi-pre-matric-obc-sikkim-2026-27.html",
+  "title": "PM Yasasvi Pre-Matric Scholarship for OBC, EBC and DNT Students, Sikkim 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "OBC/EBC/DNT"
+  ],
+  "sub": "Rs 4,000 a year academic allowance — for OBC, EBC and DNT students in Classes 9 and 10.",
+  "award": "Rs 4,000 / year",
+  "who": "OBC/EBC/DNT students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "sakal-india-foundation-career-development-scholarship-2026.html",
+  "title": "Sakal India Foundation Career Development Scholarship 2026",
+  "provider": "Sakal India Foundation",
+  "ptype": "Private Foundation",
+  "cats": [
+   "Private Foundation",
+   "Merit"
+  ],
+  "sub": "Rs 5,000 to Rs 10,000 a year — for brilliant students who can’t fully meet their education expenses.",
+  "award": "Rs 5,000 – 10,000 / year",
+  "who": "85%+ scorers",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-sakal.png"
+ },
+ {
+  "file": "satya-scholarship-program-2026.html",
+  "title": "Satya Scholarship Program 2026",
+  "provider": "Nehru Sidhant Kender Trust",
+  "ptype": "Trust",
+  "cats": [
+   "Trust",
+   "Medical",
+   "Punjab"
+  ],
+  "sub": "100% annual course fee coverage plus hostel and meal support — for first-year medical and health-sciences students on the Punjab route.",
+  "award": "100% course fee",
+  "who": "1st-year MBBS/BDS/nursing etc.",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/satya.png"
+ },
+ {
+  "file": "sdef-india-scholarship-2026-27.html",
+  "title": "SDEF India Scholarship 2026–27",
+  "provider": "SDEF",
+  "ptype": "Private",
+  "cats": [
+   "Private",
+   "Merit-cum-Means"
+  ],
+  "sub": "Up to Rs 50,000 a year for first-year professional students — B.Tech, MBBS, BDS, nursing, pharmacy, architecture and veterinary science.",
+  "award": "Up to Rs 50,000 / year",
+  "who": "First-year professional UG students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-sdef.png"
+ },
+ {
+  "file": "umbrella-scheme-post-matric-st-tripura-2026-27.html",
+  "title": "Umbrella Scheme Post-Matric Scholarship for ST Students, Tripura 2026–27",
+  "provider": "Ministry of Tribal Affairs",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "ST"
+  ],
+  "sub": "Monthly maintenance up to Rs 1,200 plus fee reimbursement — for ST students of Tripura from Class 11 up.",
+  "award": "Up to Rs 1,200 / month",
+  "who": "ST students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/fav-mota.png"
+ },
+ {
+  "file": "wings-women-stem-iit-bombay-2027-28.html",
+  "title": "WINGS — Women INspiring Growth in STEM Scholarship Program",
+  "provider": "IIT Bombay",
+  "ptype": "IIT Bombay",
+  "cats": [
+   "IIT Bombay",
+   "Girls",
+   "STEM"
+  ],
+  "sub": "Rs 2 lakh a year toward tuition fees for women pursuing undergraduate STEM at IIT Bombay — applications for the 2027–28 session close 31 October 2026.",
+  "award": "Rs 2,00,000 / year",
+  "who": "Female students",
+  "dl_raw": "31 Oct 2026",
+  "dl": "2026-10-31",
+  "days": 15,
+  "logo": "logos/iitb.png"
+ },
+ {
+  "file": "epfl-summer-internship-2027.html",
+  "title": "EPFL Summer Internship 2027 in Switzerland (Fully Funded)",
+  "provider": "EPFL",
+  "ptype": "Switzerland",
+  "cats": [
+   "Switzerland",
+   "Internship"
+  ],
+  "sub": "CHF 1,800 to CHF 3,600 a month — do real research in an EPFL lab next summer.",
+  "award": "CHF 1,800 – 3,600 / month",
+  "who": "Bachelor’s/Master’s students",
+  "dl_raw": "1 & 15 Nov 2026",
+  "dl": "2026-11-01",
+  "days": 16,
+  "logo": "logos/fav-epfl.png"
+ },
+ {
+  "file": "super-50-by-aayam-neet-jee-2026-27.html",
+  "title": "Super 50 by AAYAM 2026–27",
+  "provider": "AAYAM Career Institute",
+  "ptype": "Coaching Scholarship",
+  "cats": [
+   "Coaching Scholarship",
+   "Madhya Pradesh"
+  ],
+  "sub": "Free NEET/JEE coaching, free hostel, and up to Rs 3 lakh a year for college — for 50 students of Madhya Pradesh.",
+  "award": "Free coaching + hostel",
+  "who": "MP students",
+  "dl_raw": "5 Nov 2026",
+  "dl": "2026-11-05",
+  "days": 20,
+  "logo": "logos/fav-aayam.png"
+ },
+ {
+  "file": "swiss-government-excellence-phd-scholarships-2027-28.html",
+  "title": "Swiss Government Excellence Scholarships 2027–28",
+  "provider": "Swiss Confederation",
+  "ptype": "Switzerland",
+  "cats": [
+   "Switzerland",
+   "PhD/Research"
+  ],
+  "sub": "CHF 2,450 a month to do your PhD or research in Switzerland — one of the world’s most generous government scholarships.",
+  "award": "CHF 2,450 / month",
+  "who": "Master’s holders",
+  "dl_raw": "10 Nov 2026",
+  "dl": "2026-11-10",
+  "days": 25,
+  "logo": "logos/fav-swiss.png"
+ },
+ {
+  "file": "sage-it-india-scholarship-2026.html",
+  "title": "Sage IT India Scholarship 2026",
+  "provider": "Sage IT Inc.",
+  "ptype": "Private",
+  "cats": [
+   "Private",
+   "Article Contest"
+  ],
+  "sub": "Rs 50,000 for the best article on thriving in an AI-first world — write, don’t just study.",
+  "award": "Rs 50,000 one-time",
+  "who": "Indian students 17–30",
+  "dl_raw": "15 Nov 2026",
+  "dl": "2026-11-15",
+  "days": 30,
+  "logo": "logos/fav-sageit.png"
+ },
+ {
+  "file": "zonta-amelia-earhart-fellowship-2026.html",
+  "title": "Zonta Amelia Earhart Fellowship 2026",
+  "provider": "Zonta International",
+  "ptype": "Women",
+  "cats": [
+   "Women",
+   "PhD",
+   "International"
+  ],
+  "sub": "US$10,000 for women flying high — PhD research in aerospace engineering and space sciences.",
+  "award": "US$10,000",
+  "who": "Women PhD students",
+  "dl_raw": "15 Nov 2026",
+  "dl": "2026-11-15",
+  "days": 30,
+  "logo": "logos/fav-zonta.png"
+ },
+ {
+  "file": "world-bank-government-analytics-fellowship-2027.html",
+  "title": "World Bank Government Analytics Fellowship 2027",
+  "provider": "World Bank Group",
+  "ptype": "Professionals",
+  "cats": [
+   "Professionals",
+   "Fully Funded"
+  ],
+  "sub": "Fully funded — for public servants turning government data into better decisions.",
+  "award": "Fully funded (in-person)",
+  "who": "Central-govt officials",
+  "dl_raw": "16 Nov 2026",
+  "dl": "2026-11-16",
+  "days": 31,
+  "logo": "logos/fav-worldbank.png"
+ },
+ {
+  "file": "griffith-vc-international-scholarship-2027.html",
+  "title": "Griffith University Vice Chancellor's International Scholarship 2027",
+  "provider": "Griffith University",
+  "ptype": "Australia",
+  "cats": [
+   "Australia",
+   "UG/PG",
+   "International"
+  ],
+  "sub": "50% off tuition for your whole degree — for exceptional international students at Griffith.",
+  "award": "50% tuition waiver",
+  "who": "International students",
+  "dl_raw": "28 Nov 2026",
+  "dl": "2026-11-28",
+  "days": 43,
+  "logo": "logos/fav-griffith.png"
+ },
+ {
+  "file": "dakshana-scholarship-jdst-2027.html",
+  "title": "Dakshana Scholarship (JDST) 2027",
+  "provider": "Dakshana Foundation",
+  "ptype": "Coaching",
+  "cats": [
+   "Coaching",
+   "Merit",
+   "Free"
+  ],
+  "sub": "Free one-year residential JEE/NEET coaching — Dakshana Valley, Pune. Test in December 2026.",
+  "award": "Free coaching + stay + food",
+  "who": "Class 12 science students",
+  "dl_raw": "30 Nov 2026",
+  "dl": "2026-11-30",
+  "days": 45,
+  "logo": "logos/fav-dakshana.png"
+ },
+ {
+  "file": "nirankari-rajmata-scholarship-scheme-2026-27.html",
+  "title": "Nirankari Rajmata Scholarship Scheme 2026–27",
+  "provider": "Sant Nirankari Charitable Foundation",
+  "ptype": "Private Foundation",
+  "cats": [
+   "Merit-cum-means",
+   "Private Foundation"
+  ],
+  "sub": "Full tuition fee waiver up to Rs 75,000 a year — for meritorious students in professional courses.",
+  "award": "Up to Rs 75,000 / year",
+  "who": "90%+ in Class 12",
+  "dl_raw": "30 Nov 2026",
+  "dl": "2026-11-30",
+  "days": 45,
+  "logo": "logos/fav-nirankari.png"
+ },
+ {
+  "file": "nsp-post-matric-sc-goa-2026-27.html",
+  "title": "NSP Post-Matric Scholarship for SC, Goa 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "SC"
+  ],
+  "sub": "Annual academic allowance up to Rs 13,500 plus maintenance — for SC students of Goa.",
+  "award": "Up to Rs 13,500 / year",
+  "who": "SC students",
+  "dl_raw": "30 Nov 2026",
+  "dl": "2026-11-30",
+  "days": 45,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "odisha-banishree-scholarship-2026.html",
+  "title": "Odisha Banishree Scholarship 2026",
+  "provider": "Govt. of Odisha (SSEPD)",
+  "ptype": "Odisha",
+  "cats": [
+   "Odisha",
+   "Disability"
+  ],
+  "sub": "Rs 400 to Rs 700 a month — Odisha’s revamped scholarship for students with disabilities.",
+  "award": "Rs 400 – 700 / month",
+  "who": "Students with disabilities",
+  "dl_raw": "30 Nov 2026",
+  "dl": "2026-11-30",
+  "days": 45,
+  "logo": "logos/odisha.png"
+ },
+ {
+  "file": "post-matric-sc-chandigarh-2026-27.html",
+  "title": "Centrally Sponsored Post-Matric Scholarship for SC Students, Chandigarh 2026–27",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "SC"
+  ],
+  "sub": "Monthly maintenance up to Rs 1,200 — for SC students of Chandigarh from Class 11 to PhD.",
+  "award": "Up to Rs 1,200 / month",
+  "who": "SC students",
+  "dl_raw": "30 Nov 2026",
+  "dl": "2026-11-30",
+  "days": 45,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "umbrella-pre-matric-st-meghalaya-2026-27.html",
+  "title": "Umbrella Scheme Pre-Matric Scholarship for ST Students (Class 9 &amp; 10), Meghalaya 2026–27",
+  "provider": "Ministry of Tribal Affairs",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "ST"
+  ],
+  "sub": "Up to Rs 5,250 a year plus a books grant — for ST students of Meghalaya in Classes 9 and 10.",
+  "award": "Up to Rs 5,250 / year",
+  "who": "ST students",
+  "dl_raw": "30 Nov 2026",
+  "dl": "2026-11-30",
+  "days": 45,
+  "logo": "logos/fav-mota.png"
+ },
+ {
+  "file": "umbrella-scheme-post-matric-st-meghalaya-2026-27.html",
+  "title": "Umbrella Scheme Post-Matric Scholarship for ST Students, Meghalaya 2026–27",
+  "provider": "Ministry of Tribal Affairs",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "NSP",
+   "ST"
+  ],
+  "sub": "Monthly maintenance up to Rs 1,200 plus fee reimbursement — for ST students of Meghalaya from Class 11 up.",
+  "award": "Up to Rs 1,200 / month",
+  "who": "ST students",
+  "dl_raw": "30 Nov 2026",
+  "dl": "2026-11-30",
+  "days": 45,
+  "logo": "logos/fav-mota.png"
+ },
+ {
+  "file": "national-fellowship-sc-students-nfsc-2026.html",
+  "title": "National Fellowship Scheme for Scheduled Caste Students (NFSC) 2026",
+  "provider": "Ministry of Social Justice",
+  "ptype": "Central Government",
+  "cats": [
+   "Central Government",
+   "PhD",
+   "SC"
+  ],
+  "sub": "Rs 37,000 to Rs 42,000 a month — 2,000 fellowships for SC research scholars.",
+  "award": "Rs 37,000 – 42,000 / month",
+  "who": "SC research scholars",
+  "dl_raw": "20 Dec 2026",
+  "dl": "2026-12-20",
+  "days": 65,
+  "logo": "logos/fav-msje.png"
+ },
+ {
+  "file": "post-matric-scholarship-sc-st-obc-chhattisgarh-2026-27.html",
+  "title": "Post-Matric Scholarship for SC/ST/OBC, Chhattisgarh 2026–27",
+  "provider": "Govt. of Chhattisgarh",
+  "ptype": "Chhattisgarh",
+  "cats": [
+   "Chhattisgarh",
+   "SC/ST/OBC"
+  ],
+  "sub": "Up to Rs 3,800 a year — Chhattisgarh’s post-matric support for SC, ST and OBC students.",
+  "award": "Up to Rs 3,800 / year",
+  "who": "SC/ST/OBC students",
+  "dl_raw": "30 Dec 2026",
+  "dl": "2026-12-30",
+  "days": 75,
+  "logo": "logos/cg.png"
+ },
+ {
+  "file": "hanns-seidel-scholarships-2027-germany.html",
+  "title": "Hanns Seidel Scholarships 2027 in Germany",
+  "provider": "Hanns Seidel Foundation",
+  "ptype": "Germany",
+  "cats": [
+   "Germany",
+   "Master’s/PhD",
+   "International"
+  ],
+  "sub": "Up to €1,650 a month — for international Master’s and PhD students committed to Germany and to society.",
+  "award": "Up to €1,650 / month",
+  "who": "International Master’s/PhD",
+  "dl_raw": "15 Jan 2027",
+  "dl": "2027-01-15",
+  "days": 91,
+  "logo": "logos/fav-hanns-seidel.png"
+ }
+]

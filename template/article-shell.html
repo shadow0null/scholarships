@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} — StudyDesk Scholarships</title>
+<meta name="description" content="{{META}}">
+<style>
+:root{--navy:#1a2145;--navy2:#141a38;--ink:#101736;--soft:#3c4468;--muted:#6b7390;--amber:#f59e0b;--amberd:#b45309;--blue:#2e7de1;--red:#e5322d;--bg:#f6f8fb;--line:#e3e7f0;--serif:"Newsreader",Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);font-size:16.5px;line-height:1.7;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+.hdr{background:var(--navy2);color:#fff}
+.hdr-in{max-width:1100px;margin:0 auto;padding:0 24px;height:62px;display:flex;align-items:center;gap:10px}
+.brand{color:#fff;font-weight:800;font-size:18px;text-decoration:none;display:flex;align-items:center;gap:9px}
+.slogo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#6366f1,#8b5cf6);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700}
+.crumbs{font-size:13.5px;color:var(--muted);padding:22px 0 0}
+.crumbs a{text-decoration:none}
+.hero{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px;margin:18px 0 26px;box-shadow:0 2px 10px rgba(16,23,54,.06)}
+.hero-top{display:flex;gap:20px;align-items:flex-start;margin-bottom:18px}
+.mono{flex:none;width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,#1a2145,#2e4a8f);color:#fff;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;letter-spacing:.02em}
+.hero h1{font-family:var(--serif);font-size:31px;font-weight:650;color:var(--navy);line-height:1.25;letter-spacing:-.01em}
+.hero .prov{font-size:14.5px;color:var(--muted);margin-top:6px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.pill{font-size:13px;font-weight:700;border-radius:999px;padding:8px 16px}
+.pill.dl{background:var(--amber);color:#3d2b00}
+.pill.open{background:#e6f7ec;color:#15803d}
+.pill.src{background:#eef2ff;color:var(--navy)}
+.facts{display:grid;grid-template-columns:repeat(5,1fr);background:var(--navy);border-radius:14px;overflow:hidden;margin-bottom:30px}
+.fact{padding:18px 14px;text-align:center}
+.fact+.fact{border-left:1px solid rgba(255,255,255,.12)}
+.fact small{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8b94b8;margin-bottom:6px}
+.fact strong{font-size:14.5px;color:#fff;line-height:1.4;font-weight:650}
+@media(max-width:700px){.facts{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-left:0}.fact{border-top:1px solid rgba(255,255,255,.12)}.fact:nth-child(-n+2){border-top:0}}
+article section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;margin-bottom:20px}
+article h2{font-family:var(--serif);font-size:23px;color:var(--navy);margin-bottom:14px;font-weight:650}
+article h3{font-size:16.5px;color:var(--navy);margin:18px 0 8px}
+article p{margin-bottom:12px;color:var(--soft)}
+article ul,article ol{margin:0 0 12px 22px;color:var(--soft)}
+article li{margin-bottom:7px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:#f1f4fa;color:var(--navy);font-size:13px}
+.note{background:#fff8e8;border:1px solid #f3d9a8;border-radius:12px;padding:18px 20px;font-size:14px;color:#7a5b12;margin-bottom:20px}
+.note strong{color:#7a5b12}
+.verify{background:#f0f7ff;border:1px solid #c9defc;border-radius:12px;padding:18px 20px;font-size:13.5px;color:#33415c;margin-bottom:20px}
+.faq{border-top:1px solid var(--line);padding:16px 0}
+.faq:last-child{border-bottom:1px solid var(--line)}
+.faq strong{display:block;color:var(--navy);margin-bottom:6px;font-size:15.5px}
+.faq p{margin:0;font-size:15px}
+.cta{background:linear-gradient(110deg,var(--navy2),#1c2c63);border-radius:16px;padding:36px;color:#fff;text-align:center;margin:26px 0}
+.cta h2{font-family:var(--serif);color:#fff;font-size:24px;margin-bottom:10px}
+.cta p{color:#b9c7e8;font-size:15px;margin-bottom:18px}
+.btn{display:inline-block;background:var(--amber);color:#1f2937;font-weight:700;border-radius:999px;padding:13px 32px;text-decoration:none;font-size:15px}
+footer.site{background:var(--navy);color:#8b94b8;margin-top:50px;padding:34px 0;font-size:13.5px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="hdr-in"><a class="brand" href="/"><span class="slogo">S</span>StudyDesk</a></div></header>
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/scholarships/">Scholarships</a> &rsaquo; {{SHORT}}</nav>
+<div class="hero">
+<div class="hero-top"><span class="mono">{{MONO}}</span><div><h1>{{H1}}</h1><div class="prov">By {{PROVIDER}}</div></div></div>
+<div class="pills"><span class="pill dl">{{DEADLINE_PILL}}</span><span class="pill open">{{STATUS}}</span><span class="pill src">Verified {{CHECKED}}</span></div>
+</div>
+<div class="facts">{{FACTS}}</div>
+<article>{{BODY}}</article>
+<div class="note"><strong>Never pay to apply.</strong> {{PROVIDER}} does not charge any application fee. Apply only through the official link above.</div>
+<div class="verify"><strong>Verification note (checked {{CHECKED}}):</strong> {{VNOTE}}</div>
+<div class="cta"><h2>Never miss a deadline again</h2><p>Get a reminder 7 days and 1 day before this scholarship closes.</p><a class="btn" href="#">Get deadline alerts</a></div>
+</div>
+<footer class="site"><div class="wrap"><span>© 2026 StudyDesk · Design prototype</span><span>Not affiliated with any government body.</span></div></footer>
+</body>
+</html>

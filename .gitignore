@@ -1,0 +1,13 @@
+# Backups and build artefacts — never commit
+backups/
+*.zip
+*.bak
+__pycache__/
+*.pyc
+
+# Secrets — never commit
+.env
+*.pem
+*.key
+*credentials*
+*secret*

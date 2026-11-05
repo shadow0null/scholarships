@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>BI - oops</title>
+    <link rel="stylesheet" href="/dist/styles/base.css"/>
+    <link rel="stylesheet" href="/dist/styles/designsystem.css"/>
+    <link rel="stylesheet" href="/dist/styles/blocks.css"/>
+    <link rel="icon" type="image/svg" href="/public/images/Icons/favicon-svg.svg"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/images/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/images/Icons/favicon-16x16.png">
+</head>
+<body data-color-scheme="dark">
+<header class="error-header">
+    <a href="/" aria-label="Gå til bi.no">
+        <span class="bi-logo" data-international="true"></span>
+    </a>
+</header>
+<main>
+    <div class="title-block bg-primary-95">
+        <div class="content">
+            <div class="title">
+                <p>Oops!</p>
+                <h1>404</h1>
+            </div>
+            <p>Denne siden fant vi dessverre ikke!</p>
+            <a class="bi-button" href="/">Gå til bi.no</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
